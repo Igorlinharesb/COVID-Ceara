@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 no Ceara</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+
+		.header {
+			background-image: url("static/images/back.png");
+			height: 250px;
+		}
+
+		.title {
+			text-align: center;
+			padding-top: 50px;
+		}
+
+		.info {
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		.info > .btn {
+			margin: 10px;
+		}
+
+		.mapa, .dados{
+			margin: 10px;
+			height: 500px;
+			border: 2px;
+		}
+
+		.btn-sm {
+			margin-left: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>	
+	</nav>
+
+	<div class="header">
+		<div class="title"><h1>Coronavírus no Ceará <br></h1></div>
+		<div class="row info">
+			<div class="col"></div>
+			<div class="col-lg-2 col-sm-3 btn btn-success">X<br>CASOS CONFIRMADOS</div>
+			<div class="col-lg-2 col-sm-3 btn btn-danger">Y<br>Mortes por COVID</div>
+			<div class="col-lg-2 col-sm-3 btn btn-dark">Z <br> LETALIDADE</div>
+			<div class="col"></div>		
+		</div>
+	</div>
+
+	<div class="row mapa_menu">
+		<div class="btn-group btn-group-toggle justify-content-md-center col-lg-7 col-sm-10" data-toggle="buttons">
+			<label class="btn btn-light btn-sm active">
+				<input type="radio" name="options" id="option1" autocomplete="off" checked> Casos confirmados
+			</label>
+			<label class="btn btn-light btn-sm">
+				<input type="radio" name="options" id="option2" autocomplete="off"> Casos por 100k hab.
+			</label>
+			<label class="btn btn-light btn-sm">
+				<input type="radio" name="options" id="option3" autocomplete="off"> Óbitos
+			</label>
+			<label class="btn btn-light btn-sm">
+				<input type="radio" name="options" id="option3" autocomplete="off"> Letalidade
+			</label>
+		</div>
+		<div class="mapa col-lg-7 col-sm-10 embed-responsive embed-responsive-1by1">
+			<iframe class="embed-responsive-item" src="maps/deaths.html"></iframe>
+		</div>
+		<div class="dados col-lg-4 col-sm-10">
+			<table class="table table-striped table-sm">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Cidade</th>
+						<th scope="col">Casos</th>
+						<th scope="col">Óbitos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+</body>
+</html>
